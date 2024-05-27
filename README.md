@@ -4,9 +4,10 @@ You fill out the factory with fakers: 'title' =>$this->faker->text(10),
 Then include the factory into the migration file: Post::factory()->count(50)->create();
 Php artisan migrate:fresh
 
+```
 query()->get() helyett query()->paginate()
 $posts->link
-
+```
 
 ```
 public function index(): View
