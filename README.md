@@ -8,6 +8,7 @@ query()->get() helyett query()->paginate()
 $posts->link
 
 
+```
 public function index(): View
     {
         return view('menu.index' , ['menus' => Menu::query()->latest()->paginate()]);
@@ -18,3 +19,4 @@ public function store(ProductRequest $request)
         Product::query()->create($request->validated());
         return redirect('/')->with('status', 'Item created successfully');
     }
+```
