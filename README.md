@@ -1,8 +1,14 @@
 Database creation and migration
 Php artisan make:model
-You fill out the factory with fakers: 'title' =>$this->faker->text(10),
-Then include the factory into the migration file: Post::factory()->count(50)->create();
-Php artisan migrate:fresh
+You fill out the factory with fakers: 
+```
+'title' =>$this->faker->text(10),
+```
+Then include the factory into the migration file:
+```
+Post::factory()->count(50)->create();
+```
+Php artisan migrate:fresh --seeder=SomethingSeeder
 
 ```
 query()->get() helyett query()->paginate()
