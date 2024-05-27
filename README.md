@@ -38,3 +38,4 @@ ezt a filesystems.phpba
             'url' => env('APP_URL') . '/storage/images',
         ],
 ```
+php artisan storage:link
