@@ -29,3 +29,12 @@ public function store(ProductRequest $request)
 ```
 
 ha image upload kell akkor: composer require intervention/image
+
+ezt a filesystems.phpba
+```
+'images' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/images'),
+            'url' => env('APP_URL') . '/storage/images',
+        ],
+```
