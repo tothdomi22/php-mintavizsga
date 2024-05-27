@@ -39,3 +39,4 @@ ezt a filesystems.phpba
         ],
 ```
 php artisan storage:link
+rewrite APP_URL in the .env file to match your localhost:29083
