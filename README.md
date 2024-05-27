@@ -27,3 +27,5 @@ public function store(ProductRequest $request)
         return redirect('/')->with('status', 'Item created successfully');
     }
 ```
+
+ha image upload kell akkor: composer require intervention/image
