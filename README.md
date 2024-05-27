@@ -38,5 +38,4 @@ ezt a filesystems.phpba
             'url' => env('APP_URL') . '/storage/images',
         ],
 ```
-php artisan storage:link
-rewrite APP_URL in the .env file to match your localhost:29083
+php artisan storage:link and rewrite APP_URL in the .env file to match your localhost:29083
